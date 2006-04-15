@@ -26,11 +26,11 @@ use a chipcard, so you don't have to remember a password to access the
 list.
 
 %description -l pl
-PwManager jest bezpiecznym mened¿erem hase³, w którym mo¿esz ³atwo
-zarz±dzaæ Twoimi has³ami. PwManager zapisuje Twoje has³a kodowane
-przez blowfish w jednym pliku, wiêc musisz pamiêtaæ tylko jedno nadrzêdne
-has³o zamiast wszystkich. Mo¿esz u¿yæ karty chipowej zamiast has³a
-nadrzêdnego.
+PwManager jest bezpiecznym zarz±dc± hase³, przy u¿yciu którego mo¿na
+³atwo zarz±dzaæ swoimi has³ami. PwManager zapisuje has³a zaszyfrowane
+algorytmem blowfish w jednym pliku, wiêc trzeba pamiêtaæ tylko jedno
+nadrzêdne has³o zamiast wszystkich. Zamiast has³a nadrzêdnego mo¿na
+u¿yæ karty procesorowej.
 
 %prep
 %setup -q -a1
@@ -50,7 +50,6 @@ nadrzêdnego.
 cd %{name}-i18n-%{version}
 %configure
 %{__make}
-cd ..
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -59,10 +58,8 @@ rm -rf $RPM_BUILD_ROOT
 	kdelnkdir=%{_desktopdir} \
 	DESTDIR=$RPM_BUILD_ROOT
 
-cd %{name}-i18n-%{version}
-%{__make} install \
+%{__make} -C %{name}-i18n-%{version} install \
 	DESTDIR=$RPM_BUILD_ROOT
-cd ..
 
 %find_lang %{name} --with-kde
 
