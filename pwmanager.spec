@@ -2,7 +2,7 @@ Summary:	The convenient way of managing passwords
 Summary(pl):	Wygodny sposób zarz±dzania has³ami
 Name:		pwmanager
 Version:	1.2.4
-Release:	1
+Release:	2
 License:	GPL/LGPL
 Group:		Applications
 Source0:	http://dl.sourceforge.net/passwordmanager/%{name}-%{version}.tar.bz2
