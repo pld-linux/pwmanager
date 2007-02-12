@@ -1,5 +1,5 @@
 Summary:	The convenient way of managing passwords
-Summary(pl):	Wygodny sposób zarz±dzania has³ami
+Summary(pl.UTF-8):   Wygodny sposÃ³b zarzÄ…dzania hasÅ‚ami
 Name:		pwmanager
 Version:	1.2.4
 Release:	2
@@ -25,12 +25,12 @@ master-password instead of all. Instead of the master-password you can
 use a chipcard, so you don't have to remember a password to access the
 list.
 
-%description -l pl
-PwManager jest bezpiecznym zarz±dc± hase³, przy u¿yciu którego mo¿na
-³atwo zarz±dzaæ swoimi has³ami. PwManager zapisuje has³a zaszyfrowane
-algorytmem blowfish w jednym pliku, wiêc trzeba pamiêtaæ tylko jedno
-nadrzêdne has³o zamiast wszystkich. Zamiast has³a nadrzêdnego mo¿na
-u¿yæ karty procesorowej.
+%description -l pl.UTF-8
+PwManager jest bezpiecznym zarzÄ…dcÄ… haseÅ‚, przy uÅ¼yciu ktÃ³rego moÅ¼na
+Å‚atwo zarzÄ…dzaÄ‡ swoimi hasÅ‚ami. PwManager zapisuje hasÅ‚a zaszyfrowane
+algorytmem blowfish w jednym pliku, wiÄ™c trzeba pamiÄ™taÄ‡ tylko jedno
+nadrzÄ™dne hasÅ‚o zamiast wszystkich. Zamiast hasÅ‚a nadrzÄ™dnego moÅ¼na
+uÅ¼yÄ‡ karty procesorowej.
 
 %prep
 %setup -q -a1
