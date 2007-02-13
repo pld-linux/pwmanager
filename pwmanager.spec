@@ -1,5 +1,5 @@
 Summary:	The convenient way of managing passwords
-Summary(pl.UTF-8):   Wygodny sposób zarządzania hasłami
+Summary(pl.UTF-8):	Wygodny sposób zarządzania hasłami
 Name:		pwmanager
 Version:	1.2.4
 Release:	2
