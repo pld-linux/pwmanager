@@ -2,7 +2,7 @@ Summary:	The convenient way of managing passwords
 Summary(pl.UTF-8):	Wygodny sposób zarządzania hasłami
 Name:		pwmanager
 Version:	1.2.4
-Release:	2
+Release:	3
 License:	GPL/LGPL
 Group:		Applications
 Source0:	http://dl.sourceforge.net/passwordmanager/%{name}-%{version}.tar.bz2
@@ -62,6 +62,8 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT
 
 %find_lang %{name} --with-kde
+
+rm -rf $RPM_BUILD_ROOT%{_datadir}/icons/locolor
 
 %clean
 rm -rf $RPM_BUILD_ROOT
